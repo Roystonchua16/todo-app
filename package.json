@@ -1,0 +1,13 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Roystonchua16/todo-app.git",
+  "author": "royston <roystonchua16@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11"
+  }
+}
