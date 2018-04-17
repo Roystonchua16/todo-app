@@ -18,17 +18,17 @@
     <div class="login-wrapper">
       <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="clearbtn">Login</button>
-  <button type="button" class="clearbtn">Register</button>
+  <button OnClick="RegisterBtn()" type="button" class="clearbtn">Register</button>
 </div>
-      <form>
+      <form id="loginform">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control borderless" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="exampleInputPassword1"></label>
+          <input type="password" class="form-control borderless" id="exampleInputPassword1" placeholder="Password">
         </div>
         <br>
         <div class="form-check">
@@ -47,6 +47,7 @@
         crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+      <script src="javascript/todoapp.js"></script>
 </body>
 
 </html>

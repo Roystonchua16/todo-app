@@ -1,191 +1,202 @@
-body {
-    background-size: cover;
-    background-color: whitesmoke;
-    color:black;
-    font-family: sans-serif;
-    background-repeat: no-repeat, repeat;
-    background-blend-mode: overlay;
-  }
-  .container {
-    display: flex;
-    height: 100%;
-    justify-content: left;
-    background-color: none;
-    background-blend-mode: screen;
-  }
-  .container > div {
-    height: 50vh;
-    width: 50vh;
-    background: black;
-    color: white;
-    opacity: 0.8;
-    border: 1px solid black;
-    padding: 50 60;
-    margin: auto auto;
-  }
-  .button {
-    background-color: #4caf50;
-    border: none;
-    color: white;
-    margin: auto auto;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  #btn:hover {
-    opacity: 0.5;
-    color: black;
-  }
-input{
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid darkslategray;
-    padding: 2 2;
-    margin: 10;
-  }
-  #smalltextanimation {
-    color: white;
-    text-decoration: none;
-    font-size: 11;
-    margin: 10px 0;
-  }
-  #smalltextanimation:visited {
-    color: wheat;
-    text-decoration: none;
-    font-size: 11;
-  }
-  #smalltextanimation:hover {
-    color: blue;
-    text-decoration: underline;
-    font-size: 11;
-  }
-  #smalltextanimation:active {
-    color: yellow;
-    text-decoration: underline;
-    font-size: 11;
-  }
-  .loginimg {
-    width: 100;
-    height: 100;
-    margin: -70px 0 0 0;
-  }
-  
-  .login-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .login-wrapper:hover > #loginimg {
-    transform: scale(1.1);
-    transition: transform 1s;
-  }
-  #smallform {
-    font-size: 11;
-  }
-  
-  input:focus {
-      outline: none;
-  }
-  .clearbtn{
-      background-color: transparent;
-      color: white;
-      border: none;
-  }
-  .btn-group{
-      margin: auto auto;
-  }
+/*Login Page CSS*/
 
-  * {
-    box-sizing: border-box;
+body {
+  background-size: cover;
+  background-color:rgba(220, 220, 220, 0.719);
+  color: black;
+  font-family: sans-serif;
+  background-repeat: no-repeat, repeat;
+  background-blend-mode: overlay;
+}
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: left;
+  background-color: none;
+  background-blend-mode: screen;
+}
+.container > div {
+  height: 50vh;
+  width: 50vh;
+  background: black;
+  color: white;
+  opacity: 0.8;
+  border: 1px solid black;
+  margin: 50px auto;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  margin: auto auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#btn:hover {
+  opacity: 0.5;
+  color: black;
+}
+input.borderless {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid darkslategray;
+  padding: 2 2;
+  margin: 10;
+}
+input.borderless::placeholder { 
+    color: white;
+    margin: auto auto;
+}
+#smalltextanimation {
+  color: white;
+  text-decoration: none;
+  font-size: 11;
+  margin: 10px 0;
+}
+#smalltextanimation:visited {
+  color: wheat;
+  text-decoration: none;
+  font-size: 11;
+}
+#smalltextanimation:hover {
+  color: blue;
+  text-decoration: underline;
+  font-size: 11;
+}
+#smalltextanimation:active {
+  color: yellow;
+  text-decoration: underline;
+  font-size: 11;
+}
+.loginimg {
+  width: 100;
+  height: 100;
+  margin: -70px 0 0 0;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-wrapper:hover > #loginimg {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+#smallform {
+  font-size: 11;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*Home Page CSS*/
+.clearbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: auto auto;
+}
+
+.btn-group {
+  margin: 30px;
+  padding: 2px 20px;
+  cursor: pointer;
+  
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-}
-
-ul li:nth-child(odd) {
-    background: #f9f9f9;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
 }
 
 ul li:hover {
-    background: #ddd;
+  opacity: 0.5;
+  color: black;
 }
 
 ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
+  background:darkcyan;
+  color: #fff;
+  text-decoration: line-through;
 }
 
 ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+  content: "";
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }
 
 .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
 }
 
 .close:hover {
-    background-color: #f44336;
-    color: white;
+  background-color: #f44336;
+  color: white;
 }
+
 .header {
-    background-color: darkcyan;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
+  background-color:rgba(77, 182, 172, 1);
+  padding: 20px 40px 30px;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto';
 }
+
 .header:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 input {
-    border: none;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
+  border: 1px solid white;
+  background: white;
+  opacity: 0.5;
+  color: black;
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  float: left;
 }
 
 .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 10px;
+  width: 50px;
+  background: white;
+  color: black;
+  float: right;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .addBtn:hover {
-    background-color: #bbb;
+  background-color: #bbb;
 }

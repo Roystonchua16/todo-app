@@ -17,5 +17,9 @@ app.get("/css/style.css", (req, res) => {
     res.sendFile(__dirname + '/css/style.css');
 });
 
+app.get("/javascript/todoapp.js", (req, res) => {
+    res.sendFile(__dirname + '/javascript/todoapp.js');
+});
+
 app.listen("3000");
 console.log("localhost:3000");
