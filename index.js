@@ -5,21 +5,20 @@ var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+// set the public(or static if you prefer to call it) route
+app.use(express.static("static"));
+
 app.get("/", (req, res) => {
-    res.render("login");
+    res.render("login", {
+        title: "Login"
+    });
 });
 
 app.get("/home", (req, res) => {
-    res.render("home");
-});
-
-app.get("/css/style.css", (req, res) => {
-    res.sendFile(__dirname + '/css/style.css');
-});
-
-app.get("/javascript/todoapp.js", (req, res) => {
-    res.sendFile(__dirname + '/javascript/todoapp.js');
+    res.render("home", {
+        title: "Home"
+    });
 });
 
 app.listen("3000");
-console.log("localhost:3000");
+console.log("website is running on localhost:3000");
