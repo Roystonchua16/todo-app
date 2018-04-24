@@ -1,18 +1,19 @@
-<div class="container">
+<body class="loginbody"></body>
+<div class="login_container">
   <div class="login-wrapper">
+    <img class="avatar" src="/css/fox.png">
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="clearbtn login active" onclick="toggle('login')">Login</button>
       <button type="button" class="clearbtn register" onclick="toggle('register')">Register</button>
     </div>
     <form id="loginform">
-      <div class="form-group hide">
+      <div class="form-group">
         <label for="name"></label>
         <input type="name" class="form-control borderless" id="name" placeholder="Enter name">
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control borderless" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <input data-toggle="tooltip" data-placement="right" title="We'll never share your email with anyone else" type="email" class="form-control borderless" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1"></label>
@@ -23,12 +24,13 @@
         <input type="text" class="form-control borderless" id="confirm_password" placeholder="Confirm Password">
       </div>
       <br>
-      <div class="form-check">
+      <div class="form-check inline">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">I agree to the Terms & Conditions</label>
       </div>
-      <br>
-      <button type="submit" class="button btn">Submit</button>
+      <img class="redirect" src="css/redirect-white.png" onclick="open_terms()">
+    </form>
+    <button type="submit" class="submit-button btn">Submit</button>
     </form>
   </div>
 </div>

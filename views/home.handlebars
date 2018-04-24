@@ -1,14 +1,10 @@
-{{!-- bad naming --}}
 <div id="task_header" class="header">
-  <h2 class="header"> My To Do List </h2>
-  <input type="text" id="myInput" placeholder="Enter An Activity">
-  <span id="add" class="addBtn" onclick="addItem()"> + </span>
+  <h2 class="headerContainer"> My To Do List </h2>
+  <div>
+    <input type="text" id="InputBox" placeholder="Enter A Task">
+      <button id="addBtn" onclick="addItem()"> + </button>
+    </div>
 </div>
-{{!-- bad naming --}}
+
 <ul id="task_list">
-  <li>Task 1</li>
-  <li class="checked">Task 2</li>
-  <li>Task 3</li>
-  <li>Task 4</li>
-  <li>Task 5</li>
 </ul>

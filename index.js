@@ -8,6 +8,7 @@ app.set('view engine', 'handlebars');
 // set the public(or static if you prefer to call it) route
 app.use(express.static("static"));
 
+
 app.get("/", (req, res) => {
     res.render("login", {
         title: "Login"
